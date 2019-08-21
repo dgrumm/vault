@@ -46,12 +46,6 @@
 						"definition": "Build",
 						"command": "go build -o ((application.name))",
 						"properties": null
-					},
-					{
-						"name": "Lint",
-						"definition": "Lint",
-						"command": "set +e; gometalinter ./... --cyclo-over=10 --line-length=120 --deadline=180s --vendored-linters  --checkstyle --skip=test --skip=mock --skip=vendor --exclude=_test.go --exclude=.pb.go \u003e report.xml; set -e",
-						"properties": null
 					}
 				],
 				"exit_actions": {
